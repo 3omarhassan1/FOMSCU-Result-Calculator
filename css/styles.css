@@ -129,7 +129,7 @@ img {
   height: 100vh;
   top: -42vh;
   transform: translateX(-50%);
-  background: radial-gradient(#a2daffcc 5%, #a2daff54 40%, transparent 80%);
+  background: radial-gradient(#4db5facc 5%, #4db5fa54 40%, transparent 80%);
   opacity: 0.35;
 }
 
