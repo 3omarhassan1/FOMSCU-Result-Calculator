@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOMSCU Result Calculator</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https:/fonts.googleapis.com" />
+  <link rel="preconnect" href="https:/fonts.gstatic.com" crossorigin />
+  <link href="https:/fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="shad-cont">
+
+    <div class="shad left"></div>
+    <div class="shad right"></div>
+  </div>
+  <header>
+    <div class="container">
+      <a href="https://linktr.ee/3omarhassan1">
+        <div class="logo">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="fill-white"
+                  d="M549.88,274.94c0,151.84-123.1,274.94-274.94,274.94S0,426.78,0,274.94,123.09,0,274.94,0,549.88,123.09,549.88,274.94ZM274.94,45.82C148.4,45.82,45.82,148.4,45.82,274.94S148.4,504.05,274.94,504.05,504.05,401.47,504.05,274.94,401.47,45.82,274.94,45.82Z" />
+                <path class="fill-main"
+                  d="M286.39,69.05C395,75,481.14,164.9,481.14,274.94S395,474.88,286.39,480.83m45.83-56a160.45,160.45,0,0,0,0-299.7M286.39,68.73v412m45.83-355.65v299.7" />
+                <path class="fill-main"
+                  d="M263.48,480.83a206.13,206.13,0,0,1-45.82-7.75V297.85H116.18a160.46,160.46,0,0,0,78.57,116V465a206.29,206.29,0,0,1,0-380.06V136a160.48,160.48,0,0,0-78.57,116H217.66V76.8h0a205.55,205.55,0,0,1,45.82-7.74h0V480.27" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p>OMAR HASSAN <br><span>DEVELOPMENTS</span></p>
+      </a>
+      <ul class="links">
+        <li>
+          <a href="https://www.linkedin.com/in/3omarhassan1" target="_blank" class="linked"><i
+              class="fab fa-2x fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/3omarhassan1" target="_blank" class="github"><i
+              class="fab fa-2x fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/3omarhassan1" target="_blank" class="facebook"><i
+              class="fab fa-2x fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@3omarhassan1" target="_blank" class="youtube"><i
+              class="fab fa-2x fa-youtube"></i></a>
+        </li>
+      </ul>
+  </header>
+  <section class="exp">
+    <div class="container">
+      <h1><span>FOMSCU</span> <br> Result Calculator</h1>
+      <div class="instructions">
+        <div class="box">
+          <h3><span>Why</span> to use:</h3>
+          <p>
+            This Calculator calculates your <span>approximate</span> expected final <span>Grades</span> and
+            <span>Percentages</span> in <span>FOMSCU.</span>
+          </p>
+        </div>
+        <div class="box">
+          <h3><span>How</span> to use:</h3>
+          <p>
+            1. Enter your <span>Basic Stage</span> percentage.<br>2. Enter your <span>Grades</span> in the
+            <span>Clinical
+              Stage.</span> <br>3. Enter your approximate answers averages in the <span>Final MBBCH Exams.</span> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <div class="container">
+      <h1>The Calculator</h1>
+      <h2><span>Periodic MBBCH</span></h2>
+      <form action="">
+        <div class="basic">
+          <h3><span>Basic Stage</span></h3>
+          <label for="basicPer">Basic Stage Percentage</label>
+          <input type="number" id="basicPer" placeholder="e.g. 85">
+        </div>
+        <div class="third">
+          <h3><span>Third Year</span></h3>
+          <label for="obgynGrade">Obstetrics & Gynecology Grade</label>
+          <select name="obgynGrade" id="obgynGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="pedGrade">Pediatrics Grade</label>
+          <select name="pedGrade" id="pedGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="occuGrade">Occupational Grade</label>
+          <select name="occuGrade" id="occuGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="commuGrade">Community Grade</label>
+          <select name="commuGrade" id="commuGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="famPedGrade">Family Pediatrics Grade</label>
+          <select name="famPedGrade" id="famPedGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="famObgynGrade">Family OBGYN Grade</label>
+          <select name="famObgynGrade" id="famObgynGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+        </div>
+        <div class="fourth">
+          <h3><span>Fourth Year</span></h3>
+          <label for="sur1Grade">Surgery I Grade</label>
+          <select name="sur1Grade" id="sur1Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="im1Grade">Internal Medicine 1 Grade</label>
+          <select name="im1Grade" id="im1Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+
+        </div>
+        <div class="fifth">
+          <h3><span>Fifth Year</span></h3>
+          <label for="sur2Grade">Surgery II Grade</label>
+          <select name="sur2Grade" id="sur2Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="im2Grade">Internal Medicine II Grade</label>
+          <select name="im2Grade" id="im2Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="erGrade">Emergency, Forensic & Toxicology Grade</label>
+          <select name="erGrade" id="erGrade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="core1Grade">Core I</label>
+          <select name="core1Grade" id="core1Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="core2Grade">Core II</label>
+          <select name="core2Grade" id="core2Grade">
+            <optgroup>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </optgroup>
+          </select>
+          <br>
+        </div>
+        <div class="final">
+          <h2><span>Final MBBCH</span></h2>
+          <div class="surgery1">
+            <h3><span>Surgery I</span></h3>
+            <label for="sur1Dyn">Dynamic solved </label>
+            <input type="number" name="sur1Dyn" id="sur1Dyn" placeholder="19.5"> stations from <span>20</span> stations.
+            <br>
+            <label for="sur1Stat">Static solved </label>
+            <input type="number" name="sur1Stat" id="sur1Stat" placeholder="28"> stations from <span>30</span> stations.
+            <br>
+            <label for="sur1Mcq">MCQs solved </label>
+            <input type="number" name="sur1Mcq" id="sur1Mcq" placeholder="70"> MCQs from <span>80</span> MCQs.
+            <br>
+            <label for="sur1Meq">MEQs solved </label>
+            <input type="number" name="sur1Meq" id="sur1Meq" placeholder="8"> MEQs from <span>10</span> MEQs.
+          </div>
+          <div class="medicine1">
+            <h3><span>Internal Medicine I</span></h3>
+            <label for="im1Dyn">Dynamic solved </label>
+            <input type="number" name="im1Dyn" id="im1Dyn" placeholder="19.5"> stations from <span>20</span> stations.
+            <br>
+            <label for="im1Stat">Static solved </label>
+            <input type="number" name="im1Stat" id="im1Stat" placeholder="28"> stations from <span>30</span> stations.
+            <br>
+            <label for="im1Mcq">MCQs solved </label>
+            <input type="number" name="im1Mcq" id="im1Mcq" placeholder="70"> MCQs from <span>80</span> MCQs.
+            <br>
+            <label for="im1Meq">MEQs solved </label>
+            <input type="number" name="im1Meq" id="im1Meq" placeholder="8"> MEQs from <span>10</span> MEQs.
+          </div>
+          <div class="pediatrics">
+            <h3><span>Pediatrics</span></h3>
+            <label for="pedDyn">Dynamic solved </label>
+            <input type="number" name="pedDyn" id="pedDyn" placeholder="9.5"> stations from <span>10</span> stations.
+            <br>
+            <label for="pedStat">Static solved </label>
+            <input type="number" name="pedStat" id="pedStat" placeholder="18"> stations from <span>20</span> stations.
+            <br>
+            <label for="pedMcq">MCQs solved </label>
+            <input type="number" name="pedMcq" id="pedMcq" placeholder="70"> MCQs from <span>80</span> MCQs.
+            <br>
+            <label for="pedMeq">MEQs solved </label>
+            <input type="number" name="pedMeq" id="pedMeq" placeholder="2.5"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="obgyn">
+            <h3><span>Obstetrics & Gynecology</span></h3>
+            <label for="obgynDyn">Dynamic solved </label>
+            <input type="number" name="obgynDyn" id="obgynDyn" placeholder="9.5"> stations from <span>10</span>
+            stations.
+            <br>
+            <label for="obgynStat">Static solved </label>
+            <input type="number" name="obgynStat" id="obgynStat" placeholder="18"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="obgynMcq">MCQs solved </label>
+            <input type="number" name="obgynMcq" id="obgynMcq" placeholder="70"> MCQs from <span>80</span> MCQs.
+            <br>
+            <label for="obgynMeq">MEQs solved </label>
+            <input type="number" name="obgynMeq" id="obgynMeq" placeholder="2.5"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="commu">
+            <h3><span>Community</span></h3>
+            <label for="commuStat">Static solved </label>
+            <input type="number" name="commuStat" id="commuStat" placeholder="13.5"> stations from <span>15</span>
+            stations.
+            <br>
+            <label for="commuMcq">MCQs solved </label>
+            <input type="number" name="commuMcq" id="commuMcq" placeholder="35"> MCQs from <span>40</span> MCQs.
+            <br>
+            <label for="commuMeq">MEQs solved </label>
+            <input type="number" name="commuMeq" id="commuMeq" placeholder="2"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="occu">
+            <h3><span>Occupational</span></h3>
+            <label for="occuStat">Static solved </label>
+            <input type="number" name="occuStat" id="occuStat" placeholder="13.5"> stations from <span>15</span>
+            stations.
+            <br>
+            <label for="occuMcq">MCQs solved </label>
+            <input type="number" name="occuMcq" id="occuMcq" placeholder="35"> MCQs from <span>40</span> MCQs.
+            <br>
+            <label for="occuMeq">MEQs solved </label>
+            <input type="number" name="occuMeq" id="occuMeq" placeholder="2"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="famObgyn">
+            <h3><span>Family OBGYN</span></h3>
+            <label for="famObgynDyn">Dynamic solved </label>
+            <input type="number" name="famObgynDyn" id="famObgynDyn" placeholder="4.5"> stations from <span>5</span>
+            stations.
+            <br>
+            <label for="famObgynStat">Static solved </label>
+            <input type="number" name="famObgynStat" id="famObgynStat" placeholder="9.5"> stations from <span>10</span>
+            stations.
+            <br>
+            <label for="famObgynMcq">MCQs solved </label>
+            <input type="number" name="famObgynMcq" id="famObgynMcq" placeholder="35"> MCQs from <span>40</span> MCQs.
+            <br>
+            <label for="famObgynMeq">MEQs solved </label>
+            <input type="number" name="famObgynMeq" id="famObgynMeq" placeholder="2.5"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="famPed">
+            <h3><span>Family Pediatrics</span></h3>
+            <label for="famPedDyn">Dynamic solved </label>
+            <input type="number" name="famPedDyn" id="famPedDyn" placeholder="4.5"> stations from <span>5</span>
+            stations.
+            <br>
+            <label for="famPedStat">Static solved </label>
+            <input type="number" name="famPedStat" id="famPedStat" placeholder="9.5"> stations from <span>10</span>
+            stations.
+            <br>
+            <label for="famPedMcq">MCQs solved </label>
+            <input type="number" name="famPedMcq" id="famPedMcq" placeholder="35"> MCQs from <span>40</span> MCQs.
+            <br>
+            <label for="famPedMeq">MEQs solved </label>
+            <input type="number" name="famPedMeq" id="famPedMeq" placeholder="2.5"> MEQs from <span>3</span> MEQs.
+          </div>
+          <div class="surgery2">
+            <h3><span>Surgery II</span></h3>
+            <label for="sur2Dyn">Dynamic solved </label>
+            <input type="number" name="sur2Dyn" id="sur2Dyn" placeholder="18"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="sur2Stat">Static solved </label>
+            <input type="number" name="sur2Stat" id="sur2Stat" placeholder="25"> stations from <span>30</span>
+            stations.
+            <br>
+            <label for="sur2Mcq">MCQs solved </label>
+            <input type="number" name="sur2Mcq" id="sur2Mcq" placeholder="100"> MCQs from <span>120</span> MCQs.
+            <br>
+            <label for="sur2Meq">MEQs solved </label>
+            <input type="number" name="sur2Meq" id="sur2Meq" placeholder="8"> MEQs from <span>9</span> MEQs.
+          </div>
+          <div class="medicine2">
+            <h3><span>Internal Medicine II</span></h3>
+            <label for="im2Dyn">Dynamic solved </label>
+            <input type="number" name="im2Dyn" id="im2Dyn" placeholder="18"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="im2Stat">Static solved </label>
+            <input type="number" name="im2Stat" id="im2Stat" placeholder="25"> stations from <span>30</span>
+            stations.
+            <br>
+            <label for="im2Mcq">MCQs solved </label>
+            <input type="number" name="im2Mcq" id="im2Mcq" placeholder="100"> MCQs from <span>120</span> MCQs.
+            <br>
+            <label for="im2Meq">MEQs solved </label>
+            <input type="number" name="im2Meq" id="im2Meq" placeholder="10"> MEQs from <span>12</span> MEQs.
+          </div>
+          <div class="emergency">
+            <h3><span>Emergency, Forensic & Toxicology</span></h3>
+            <label for="erDyn">Dynamic solved </label>
+            <input type="number" name="erDyn" id="erDyn" placeholder="18"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="erStat">Static solved </label>
+            <input type="number" name="erStat" id="erStat" placeholder="25"> stations from <span>30</span>
+            stations.
+            <br>
+            <label for="erMcq">MCQs solved </label>
+            <input type="number" name="erMcq" id="erMcq" placeholder="100"> MCQs from <span>120</span> MCQs.
+            <br>
+            <label for="erMeq">MEQs solved </label>
+            <input type="number" name="erMeq" id="erMeq" placeholder="8"> MEQs from <span>9</span> MEQs.
+          </div>
+          <div class="core1">
+            <h3><span>Core I</span></h3>
+            <label for="core1Dyn">Dynamic solved </label>
+            <input type="number" name="core1Dyn" id="core1Dyn" placeholder="9"> stations from <span>10</span>
+            stations.
+            <br>
+            <label for="core1Stat">Static solved </label>
+            <input type="number" name="core1Stat" id="core1Stat" placeholder="19"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="core1Mcq">MCQs solved </label>
+            <input type="number" name="core1Mcq" id="core1Mcq" placeholder="100"> MCQs from <span>120</span> MCQs.
+            <br>
+            <label for="core1Meq">MEQs solved </label>
+            <input type="number" name="core1Meq" id="core1Meq" placeholder="10"> MEQs from <span>11</span> MEQs.
+          </div>
+          <div class="core2">
+            <h3><span>Core II</span></h3>
+            <label for="core2Dyn">Dynamic solved </label>
+            <input type="number" name="core2Dyn" id="core2Dyn" placeholder="9"> stations from <span>10</span>
+            stations.
+            <br>
+            <label for="core2Stat">Static solved </label>
+            <input type="number" name="core2Stat" id="core2Stat" placeholder="19"> stations from <span>20</span>
+            stations.
+            <br>
+            <label for="core2Mcq">MCQs solved </label>
+            <input type="number" name="core2Mcq" id="core2Mcq" placeholder="100"> MCQs from <span>120</span> MCQs.
+            <br>
+            <label for="core2Meq">MEQs solved </label>
+            <input type="number" name="core2Meq" id="core2Meq" placeholder="10"> MEQs from <span>11</span> MEQs.
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="results">
+    <div class="container">
+      <h2><span>Your Results</span></h2>
+      Your Overall Average Percentage is from <span class="upBorder">100</span><span>%</span> to <span
+        class="lowBorder">85</span><span>%.</span>
+      <br>
+      Your Overall Average Grade is from <span class="upGrade">A</span> to <span class="lowGrade">B</span>.
+    </div>
+  </section>
+  <footer></footer>
+</body>
+
+</html>
