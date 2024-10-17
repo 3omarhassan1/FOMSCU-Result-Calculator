@@ -89,181 +89,188 @@
   <section class="calculator">
     <div class="container">
       <h1>The Calculator</h1>
-      <h2><span>Periodic MBBCH Exams</span></h2>
-      <form action="">
-        <div class="basic">
-          <h3><span>Basic Stage</span></h3>
-          <label for="basicPer">Basic Stage Percentage</label>
-          <input type="number" id="basicPer" placeholder="e.g. 85">
-        </div>
-        <div class="third">
-          <h3><span>Third Year</span></h3>
-          <label for="obgynGrade">Obstetrics & Gynecology Grade</label>
-          <select name="obgynGrade" id="obgynGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="pedGrade">Pediatrics Grade</label>
-          <select name="pedGrade" id="pedGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="occuGrade">Occupational Grade</label>
-          <select name="occuGrade" id="occuGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="commuGrade">Community Grade</label>
-          <select name="commuGrade" id="commuGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="famPedGrade">Family Pediatrics Grade</label>
-          <select name="famPedGrade" id="famPedGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="famObgynGrade">Family OBGYN Grade</label>
-          <select name="famObgynGrade" id="famObgynGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-        </div>
-        <div class="fourth">
-          <h3><span>Fourth Year</span></h3>
-          <label for="sur1Grade">Surgery I Grade</label>
-          <select name="sur1Grade" id="sur1Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="im1Grade">Internal Medicine 1 Grade</label>
-          <select name="im1Grade" id="im1Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
+      <form id="form" onsubmit="return false">
+        <h2><span>Periodic MBBCH Exams</span></h2>
+        <div class="periodic">
+          <div class="">
+            <div class="basic">
+              <h3><span>Basic Stage</span></h3>
+              <label for="basicPer">Basic Stage Percentage</label>
+              <input type="number" id="basicPer" placeholder="e.g. 85">
+            </div>
+            <div class="third">
+              <h3><span>Third Year</span></h3>
+              <label for="obgynGrade">Obstetrics & Gynecology Grade</label>
+              <select name="obgynGrade" id="obgynGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="pedGrade">Pediatrics Grade</label>
+              <select name="pedGrade" id="pedGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="occuGrade">Occupational Grade</label>
+              <select name="occuGrade" id="occuGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="commuGrade">Community Grade</label>
+              <select name="commuGrade" id="commuGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="famPedGrade">Family Pediatrics Grade</label>
+              <select name="famPedGrade" id="famPedGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="famObgynGrade">Family OBGYN Grade</label>
+              <select name="famObgynGrade" id="famObgynGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+            </div>
+          </div>
+          <div class="">
+            <div class="fourth">
+              <h3><span>Fourth Year</span></h3>
+              <label for="sur1Grade">Surgery I Grade</label>
+              <select name="sur1Grade" id="sur1Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="im1Grade">Internal Medicine 1 Grade</label>
+              <select name="im1Grade" id="im1Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
 
+            </div>
+            <div class="fifth">
+              <h3><span>Fifth Year</span></h3>
+              <label for="sur2Grade">Surgery II Grade</label>
+              <select name="sur2Grade" id="sur2Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="im2Grade">Internal Medicine II Grade</label>
+              <select name="im2Grade" id="im2Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="erGrade">Emergency, Forensic & Toxicology Grade</label>
+              <select name="erGrade" id="erGrade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="core1Grade">Core I</label>
+              <select name="core1Grade" id="core1Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+              <label for="core2Grade">Core II</label>
+              <select name="core2Grade" id="core2Grade">
+                <optgroup>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </optgroup>
+              </select>
+              <br>
+            </div>
+          </div>
         </div>
-        <div class="fifth">
-          <h3><span>Fifth Year</span></h3>
-          <label for="sur2Grade">Surgery II Grade</label>
-          <select name="sur2Grade" id="sur2Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="im2Grade">Internal Medicine II Grade</label>
-          <select name="im2Grade" id="im2Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="erGrade">Emergency, Forensic & Toxicology Grade</label>
-          <select name="erGrade" id="erGrade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="core1Grade">Core I</label>
-          <select name="core1Grade" id="core1Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-          <label for="core2Grade">Core II</label>
-          <select name="core2Grade" id="core2Grade">
-            <optgroup>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-            </optgroup>
-          </select>
-          <br>
-        </div>
+
+        <h2><span>Final MBBCH Exams</span></h2>
         <div class="final">
-          <h2><span>Final MBBCH Exams</span></h2>
           <div class="surgery1">
             <h3><span>Surgery I</span></h3>
             <label for="sur1Dyn">Dynamic solved </label>
@@ -460,8 +467,8 @@
           </div>
         </div>
         <div class="btns">
-          <button class="btn" type="submit">Calculate</button>
-          <button class="btn" type="reset">Clear All</button>
+          <button type="button" id="submit" class="btn">Calculate</button>
+          <button type="button" id="reset" class="btn">Clear All</button>
         </div>
       </form>
     </div>
@@ -470,62 +477,70 @@
     <div class="container">
       <h1><span>Your Results</span></h1>
       <p>
-        Your Overall Average Percentage is from <span class="upBorder">100</span><span>%</span> to <span
-          class="lowBorder">85</span><span>%.</span>
+        Your Overall Average Percentage is from <span id="upEnd">waiting</span><span>%</span> to <span
+          id="lowEnd">waiting</span><span>%.</span>
       </p>
-      <p>Your Overall Average Grade is from <span class="upGrade">A</span> to <span class="lowGrade">B</span>.</p>
+      <p>Your Overall Average Grade is from <span id="upGrade">waiting</span> to <span id="lowGrade">waiting</span>.</p>
+      <p>
+        Your Clinical Average Percentage is from <span id="cUpEnd">waiting</span><span>%</span> to <span
+          id="cLowEnd">waiting</span><span>%.</span>
+      </p>
       <div class="degrees">
         <div class="degree">
-          <span>Surgery I:</span> From <span class="sur1UpBorder">100</span><span>%</span> to <span
-            class="sur1LowBorder">85</span><span>%</span>
+          <span>Surgery I:</span> From <span id="sur1UpEnd">waiting</span><span>%</span> to <span
+            id="sur1LowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Internal Medicine I:</span> From <span class="im1UpBorder">100</span><span>%</span> to <span
-            class="im1LowBorder">85</span><span>%</span>
+          <span>Internal Medicine I:</span> From <span id="im1UpEnd">waiting</span><span>%</span> to <span
+            id="im1LowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Obstetrics & Gynecology:</span> From <span class="obgynUpBorder">100</span><span>%</span> to <span
-            class="obgynLowBorder">85</span><span>%</span>
+          <span>Obstetrics & Gynecology:</span> From <span id="obgynUpEnd">waiting</span><span>%</span> to <span
+            id="obgynLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Pediatrics:</span> From <span class="pedUpBorder">100</span><span>%</span> to <span
-            class="pedLowBorder">85</span><span>%</span>
+          <span>Pediatrics:</span> From <span id="pedUpEnd">waiting</span><span>%</span> to <span
+            id="pedLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Family OBGYN:</span> From <span class="famObgynUpBorder">100</span><span>%</span> to <span
-            class="famObgynLowBorder">85</span><span>%</span>
+          <span>Family OBGYN:</span> From <span id="famObgynUpEnd">waiting</span><span>%</span> to <span
+            id="famObgynLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Family Pediatrics:</span> From <span class="famPedUpBorder">100</span><span>%</span> to <span
-            class="famPedLowBorder">85</span><span>%</span>
+          <span>Family Pediatrics:</span> From <span id="famPedUpEnd">waiting</span><span>%</span> to <span
+            id="famPedLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Community:</span> From <span class="commuUpBorder">100</span><span>%</span> to <span
-            class="commuLowBorder">85</span><span>%</span>
+          <span>Community:</span> From <span id="commuUpEnd">waiting</span><span>%</span> to <span
+            id="commuLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Occupational:</span> From <span class="occuUpBorder">100</span><span>%</span> to <span
-            class="occuLowBorder">85</span><span>%</span>
+          <span>Occupational:</span> From <span id="occuUpEnd">waiting</span><span>%</span> to <span
+            id="occuLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Surgery II:</span> From <span class="sur2UpBorder">100</span><span>%</span> to <span
-            class="sur2LowBorder">85</span><span>%</span>
+          <span>Surgery II:</span> From <span id="sur2UpEnd">waiting</span><span>%</span> to <span
+            id="sur2LowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Internal Medicine II:</span> From <span class="sur2UpBorder">100</span><span>%</span> to <span
-            class="sur2LowBorder">85</span><span>%</span>
+          <span>Internal Medicine II:</span> From <span id="im2UpEnd">waiting</span><span>%</span> to <span
+            id="im2LowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Emergency, Forensic & Toxicology:</span> From <span class="erUpBorder">100</span><span>%</span> to <span
-            class="erLowBorder">85</span><span>%</span>
+          <span>Emergency, Forensic & Toxicology:</span> From <span id="erUpEnd">waiting</span><span>%</span> to <span
+            id="erLowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Core I:</span> From <span class="core1UpBorder">100</span><span>%</span> to <span
-            class="core1LowBorder">85</span><span>%</span>
+          <span>Core I:</span> From <span id="core1UpEnd">waiting</span><span>%</span> to <span
+            id="core1LowEnd">waiting</span><span>%</span>
         </div>
         <div class="degree">
-          <span>Core I:</span> From <span class="core2UpBorder">100</span><span>%</span> to <span
-            class="core2LowBorder">85</span><span>%</span>
+          <span>Core I:</span> From <span id="core2UpEnd">waiting</span><span>%</span> to <span
+            id="core2LowEnd">waiting</span><span>%</span>
+        </div>
+        <div class="degree">
+          <span>Test:</span> From <span id="testUpEnd">waiting</span><span>%</span> to <span
+            id="testLowEnd">waiting</span><span>%</span>
         </div>
       </div>
       <p class="note">N.B.: These numbers are <span>NOT</span> official and actual ones may vary slightly.</p>
@@ -538,6 +553,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

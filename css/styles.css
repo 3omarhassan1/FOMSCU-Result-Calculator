@@ -369,16 +369,33 @@ header .container .links li:hover a {
   padding: 20px 0;
   border: none;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   flex-basis: 50%;
+  cursor: pointer;
 }
-.calculator [type="submit"] {
+#submit {
   background-color: var(--maincolor);
 }
-.calculator [type="reset"] {
+#reset {
   color: var(--maincolor);
   background-color: #1e1e1e;
+}
+
+@media (min-width: 991px) {
+  .calculator .periodic,
+  .calculator .final {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .calculator .periodic > div {
+    flex-basis: 50%;
+  }
+  .calculator .final > div {
+    flex-basis: 50%;
+  }
 }
 /* end calculator */
 /* start results */
